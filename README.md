@@ -55,9 +55,7 @@ derecha, trasera izquierda, trasera derecha:
 
 El cálculo de las rotaciones de cada motor viene determinado por:
 
-$$
-
-\begin{pmatrix}
+$$\begin{pmatrix}
     r_1 \\
     r_2 \\
     r_3 \\
@@ -72,9 +70,7 @@ $$
     1 \\
     1 \\
     1 \\
-\end{pmatrix} \cdot Ny
-
-$$
+\end{pmatrix} \cdot Ny$$
 
 donde:
 
@@ -100,12 +96,10 @@ $$ k = \frac{X_{max}}{c'} = \frac{127}{c'} $$
 
 3. Se puede obtener por consiguiente tanto $r$ y $r_{max}$, tal que:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
     r       &= \sqrt{x^2 + y^2} \\
     r_{max} &= \sqrt{\left(x \cdot k\right)^2 + \left(y \cdot k\right)^2}
-\end{aligned}
-$$
+\end{aligned}$$
 
 4. Finalmente, se define el factor de normalización $N$ como $r$ sobre $r_{max}$:
 
