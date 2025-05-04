@@ -55,22 +55,22 @@ derecha, trasera izquierda, trasera derecha:
 
 El cálculo de las rotaciones de cada motor viene determinado por:
 
-$$\begin{pmatrix}
+$$\left(\begin{matrix}
     r_1 \\
     r_2 \\
     r_3 \\
     r_4 \\
-\end{pmatrix} = \begin{pmatrix}
+\end{matrix}\right) = \left(\begin{matrix}
     1 \\
     -1 \\
     -1 \\
     1 \\
-\end{pmatrix} \cdot Nx + \begin{pmatrix}
+\end{matrix}\right) \cdot Nx + \left(\begin{matrix}
     1 \\
     1 \\
     1 \\
     1 \\
-\end{pmatrix} \cdot Ny$$
+\end{matrix}\right) \cdot Ny$$
 
 donde:
 
@@ -114,13 +114,9 @@ El RoverC Pro interpreta los giros de rueda de la siguiente manera:
 
 Por ende, para una coordenada $c$ que se quiera convertir a aceleración $v$:
 
-$$
-
-\left\{
+$$\left\{
     \begin{aligned}
         v &= -255 + c \cdot 128^{-1} &,\space c \lt 0 \\
         v &= c \cdot 128^{-1}        &,\space c \ge 0 \\
     \end{aligned}
-\right.
-
-$$
+\right.$$
