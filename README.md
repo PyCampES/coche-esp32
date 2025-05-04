@@ -114,7 +114,7 @@ El RoverC Pro interpreta los giros de rueda de la siguiente manera:
 
 Por ende, para una coordenada $c$ que se quiera convertir a aceleración $v$:
 
-$$\left\{
+$$\left(
     \begin{aligned}
         v &= -255 + c \cdot 128^{-1} &,\space c \lt 0 \\
         v &= c \cdot 128^{-1}        &,\space c \ge 0 \\
